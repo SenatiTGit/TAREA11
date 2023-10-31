@@ -3,8 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>Northwind</ID>
-        <ConnectionString>Data Source=DESKTOP-3VTHSJ3;Initial Catalog=Northwind;User ID=;Password=</ConnectionString>
-        <ManagedProvider>System.Data.SqlClient</ManagedProvider>
+        <ConnectionString>Provider=SQLOLEDB.1;Data Source=DESKTOP-3VTHSJ3;Password=;User ID=;Initial Catalog=Northwind</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
@@ -13,29 +12,24 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Products</ID>
+        <ID>Categories</ID>
       </Dimension>
       <Dimension>
-        <ID>Orders</ID>
+        <ID>Suppliers</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Products</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Cubo</ID>
+        <ID>Northwind</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Products</ID>
             <Partitions>
               <Partition>
                 <ID>Products</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Orders</ID>
-            <Partitions>
-              <Partition>
-                <ID>Orders</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

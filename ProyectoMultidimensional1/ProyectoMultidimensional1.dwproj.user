@@ -4,7 +4,7 @@
       <Name>Development</Name>
       <Options>
         <TargetServer>DESKTOP-3VTHSJ3</TargetServer>
-        <TargetDatabase>ProyectoMultidimensional1</TargetDatabase>
+        <TargetDatabase>Northwind</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>

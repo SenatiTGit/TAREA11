@@ -8,24 +8,28 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Cubo.cube</Name>
-      <FullPath>Cubo.cube</FullPath>
+      <Name>Northwind 1.cube</Name>
+      <FullPath>Northwind 1.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cubo.partitions</Name>
-          <FullPath>Cubo.partitions</FullPath>
+          <Name>Northwind 1.partitions</Name>
+          <FullPath>Northwind 1.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Products.dim</Name>
-      <FullPath>Products.dim</FullPath>
+      <Name>Categories.dim</Name>
+      <FullPath>Categories.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Orders.dim</Name>
-      <FullPath>Orders.dim</FullPath>
+      <Name>Suppliers.dim</Name>
+      <FullPath>Suppliers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Products.dim</Name>
+      <FullPath>Products.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -36,8 +40,8 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>Northwind1.dsv</Name>
-      <FullPath>Northwind1.dsv</FullPath>
+      <Name>Northwind.dsv</Name>
+      <FullPath>Northwind.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -48,14 +52,13 @@
           <ConfigurationSetting>
             <Id>Northwind</Id>
             <Name>Northwind</Name>
-            <Value xsi:type="xsd:string">Data Source=DESKTOP-3VTHSJ3;Initial Catalog=Northwind;User ID=;Password=</Value>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=DESKTOP-3VTHSJ3;Password=;User ID=;Initial Catalog=Northwind</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>
           <ConfigurationSetting>
             <Id>Northwind</Id>
             <Name>Northwind</Name>
-            <Value xsi:type="xsd:string">System.Data.SqlClient</Value>
           </ConfigurationSetting>
         </ConnectionProviderMappings>
         <ConnectionSecurityMappings>
